@@ -4,7 +4,8 @@
   </div>
 </template>
 
-<style>
+<!-- 지워버려야함 -->
+<!-- <style>
 html {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
@@ -49,4 +50,4 @@ html {
   color: #fff;
   background-color: #35495e;
 }
-</style>
+</style> -->
