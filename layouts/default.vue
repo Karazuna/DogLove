@@ -51,23 +51,3 @@ html {
   background-color: #35495e;
 }
 </style> -->
-
-<style>
-  .spaceWrap { 
-  width: 400px; 
-  height: 225px; 
-  padding: 0; 
-  overflow: hidden; 
-}
-
-.viewPort { 
-  width: 1600px; 
-  height: 900px; 
-  border: 1px solid black;
-}
-
-.viewPort {
-    -webkit-transform: scale(0.25);
-    -webkit-transform-origin: 0 0;
-}
-</style>

@@ -8,6 +8,7 @@
         </div>
       </div>
     </div>
+    <br>
     <article class="message">
       <div class="message-header">
         개는 어떻게 짖는가?
@@ -16,14 +17,16 @@
         멍멍 왈왈 으르르 컹컹 크르릉
       </div>
     </article>
-    <!-- <iframe class="viewPort" src="https://www.youtube.com/embed/y-xjmYh5xEY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+    <div class="notification">
+        <iframe width="100%" height="360" src="https://www.youtube.com/embed/y-xjmYh5xEY?ecver=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
 
     <!-- <div class="container">
       <figure class="image is-square">
           <img src="https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/QsT/image/NSTeOeMe0MddpqlJ23FZV7hJGvg">
         </figure>
     </div> -->
-
+    <br>
     <div class="columns">
       <div class="column">
         <div class="notification">
