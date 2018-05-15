@@ -15,24 +15,44 @@
       <div class="message-body">
         멍멍 왈왈 으르르 컹컹 크르릉
       </div>
-      <iframe width="400" height="300" src="https://www.youtube.com/embed/y-xjmYh5xEY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </article>
+    <!-- <iframe class="viewPort" src="https://www.youtube.com/embed/y-xjmYh5xEY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
 
-    <div class="container">
+    <!-- <div class="container">
       <figure class="image is-square">
           <img src="https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/QsT/image/NSTeOeMe0MddpqlJ23FZV7hJGvg">
         </figure>
-    </div>
+    </div> -->
 
-    <div class="column">
-      <figure>
-
-      </figure>
-    </div>
+    <div class="columns">
+        <div class="column">
+          <div class="container">
+            <figure class="image is-squre">
+              <img src="https://www.cesarsway.com/sites/newcesarsway/files/styles/large_article_preview/public/Natural-Dog-Law-2-To-dogs%2C-energy-is-everything.jpg?itok=Z-ujUOUr" alt="">
+            </figure>
+          </div>
+        </div>
+        <div class="column">
+          <figure class="image is-squre">
+            <img v-bind:src="image" alt="">
+          </figure>
+        </div>
+      </div>
 
   </section>
 </template>
 
 <script>
+  import axios from 'axios';
+  export default {
+    data() {
+      return {};
+    },
+    async asyncData() {
+      const myImage = await axios.get('https://dog.ceo/api/breeds/image/random');
+      return { image: myImage.data.message };
+    }
+  };
+
 
 </script>
