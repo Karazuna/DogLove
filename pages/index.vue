@@ -25,19 +25,29 @@
     </div> -->
 
     <div class="columns">
-        <div class="column">
-          <div class="container">
-            <figure class="image is-squre">
-              <img src="https://www.cesarsway.com/sites/newcesarsway/files/styles/large_article_preview/public/Natural-Dog-Law-2-To-dogs%2C-energy-is-everything.jpg?itok=Z-ujUOUr" alt="">
-            </figure>
-          </div>
-        </div>
-        <div class="column">
+      <div class="column">
+        <div class="notification">
+          <!-- <div class="container"> -->
           <figure class="image is-squre">
-            <img v-bind:src="image" alt="">
+            <img src="https://www.cesarsway.com/sites/newcesarsway/files/styles/large_article_preview/public/Natural-Dog-Law-2-To-dogs%2C-energy-is-everything.jpg?itok=Z-ujUOUr"
+              alt="">
           </figure>
         </div>
       </div>
+      <div class="column">
+        <div class="message is-info">
+          <div class="message-header">
+            <p>오늘의 -개-사진</p>
+          </div>
+          <div class="message-body">
+            <figure class="image is-squre">
+              <img v-bind:src="image" alt="">
+            </figure>
+          </div>
+        </div>
+
+      </div>
+    </div>
 
   </section>
 </template>
