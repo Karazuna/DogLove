@@ -54,11 +54,18 @@
     <div class="box">
       <h1 class="title">보고 싶은 개 정보를 누르세요.</h1>
       <span v-for="dog in dogs" v-bind:key="dog">
-        <a href="#" class="button is-black is-focused">
+        <!-- <a href="#" class="button is-black is-focused"> -->
+        <!-- <nuxt-link v-bind:to="'/dogs/' + dog" class="button is-info"> -->
+        <nuxt-link :to="'/dogs/' + dog" class="button is-info">
           {{dog}}
-        </a> &nbsp;
+        </nuxt-link> &nbsp;
       </span>
     </div>
+    <!--     <div>
+      연습테스트
+      <p></p>
+      {{ranking}}
+    </div> -->
 
   </section>
 </template>
@@ -72,9 +79,11 @@
     async asyncData() {
       const myImage = await axios.get('https://dog.ceo/api/breeds/image/random');
       const myDogs = await axios.get('https://dog.ceo/api/breeds/list');
+      const myTest = await axios.get('http://rank.search.naver.com/rank.js');
       return {
         image: myImage.data.message,
-        dogs: myDogs.data.message
+        dogs: myDogs.data.message,
+        ranking: myTest.data.data
       };
     }
   };
