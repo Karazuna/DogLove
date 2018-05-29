@@ -79,11 +79,11 @@
     async asyncData() {
       const myImage = await axios.get('https://dog.ceo/api/breeds/image/random');
       const myDogs = await axios.get('https://dog.ceo/api/breeds/list');
-      const myTest = await axios.get('http://rank.search.naver.com/rank.js');
+      /* const myTest = await axios.get('http://rank.search.naver.com/rank.js'); */
       return {
         image: myImage.data.message,
         dogs: myDogs.data.message,
-        ranking: myTest.data.data
+        /* ranking: myTest.data.data */
       };
     }
   };
