@@ -1,10 +1,20 @@
 <template>
     <section class="section">
-        <article class="hero">
+        <article class="hero is-info">
             <div class="hero-body">
                 <div class="container">
                     <h1 class="tittle">저는 {{dogName.toUpperCase()}} 입니다</h1>
-                    <h2 class="subtitle">많이 사랑해주요!</h2>
+                    <h2 class="subtitle">많이 사랑해주세요!</h2>
+                </div>
+            </div>
+        </article>
+
+        <article class="notification is-success">
+            <div class="columns">
+                <div v-for="image in images" :key="image" class="column">
+                    <figure class="image is-square">
+                        <img :src="image" alt="">
+                    </figure>
                 </div>
             </div>
         </article>
@@ -13,10 +23,19 @@
 </template>
 
 <script>
+    import axios from 'axios';
     export default {
-        asyncData({ params }) {
+        async asyncData({ params }) {
+            let maxImg = 4;
+            let images = [];
+            for (let i = 0; i < maxImg; i++) {
+                const image = await axios.get(`https://dog.ceo/api/breed/${params.dog}/images/random`);
+                images.push(image.data.message);
+            }
+
             return {
-                dogName: params.dog
+                dogName: params.dog,
+                images: images
             };
         }
     };
