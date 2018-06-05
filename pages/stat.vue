@@ -8,7 +8,23 @@
             </div>
         </article>
         <article class="message">
-            
+            <div class="message-header">
+                애견 산업 전망
+            </div>
+            <div class="message-body">
+                <div id=chartArea>
+
+                </div>
+            </div>
         </article>
     </section>
 </template>
+
+<script>
+    import myBarChart from '~/plugins/myBarChart';
+    export default {
+        mounted() {
+            if (process.client) { myBarChart('chartArea'); }
+        }
+    };
+</script>
