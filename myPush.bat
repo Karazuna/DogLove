@@ -1,3 +1,3 @@
 git add --all
-git commit -m "2018-05-29, VueJS - button nuxt-link & asyncDate & table & list & navbar"
+git commit -m "2018-06-05, VueJS - chart CSS [01], config.js"
 git push -u origin master
