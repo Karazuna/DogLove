@@ -2,7 +2,12 @@
   <div>
     <nav class="navbar">
       <div class="navbar-brand">
-        <nuxt-link to="/" class="navbar-item">개사랑</nuxt-link>
+        <!-- <nuxt-link to="/" class="navbar-item">개사랑</nuxt-link> -->
+        <nuxt-link to="/" class="navbar-item">
+          <figure class="image is-128x128">
+            <img src="~static/dogicon.png" alt="">
+          </figure>
+        </nuxt-link>
       </div>
       <!-- <div class="navbar-menu is-active"> is active menu fixed-->
       <div class="navbar-menu is-active">
@@ -14,9 +19,12 @@
     </nav>
     <nuxt/>
     <footer class="footer has-text-right">
-      <p>
+      <div>
+        <figure class="image is-128x128">
+          <img src="~assets/dang.jpg" alt="">
+        </figure>
         2018년 목원대학교 개사랑. 저작권 ㅠㅠ
-      </p>
+      </div>
     </footer>
   </div>
 </template>

@@ -1,15 +1,15 @@
 export default function(elementName) {
   var container = document.getElementById(elementName);
   var data = {
-    categories: ["June", "July", "Aug", "Sep", "Oct", "Nov"],
+    categories: ["2013", "2014", "2015", "2016", "2017", "2018"],
     series: [
       {
-        name: "Budget",
+        name: "시장 규모(억 원)",
         data: [5000, 3000, 5000, 7000, 6000, 4000]
       },
       {
         name: "Income",
-        data: [8000, 1000, 7000, 2000, 5000, 3000]
+        data: [8000, 10000, 14000, 18000, 25000, 40000]
       }
     ]
   };
