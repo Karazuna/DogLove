@@ -7,5 +7,8 @@
                 </h1>
             </div>
         </article>
+        <article class="message">
+            
+        </article>
     </section>
 </template>
