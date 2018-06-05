@@ -3,6 +3,9 @@
     <div class="hero is-info">
       <div class="hero-body">
         <div class="container">
+          <figure class="image is-128x128">
+            <img src="~assets/dang.jpg" alt="">
+          </figure>
           <h1 class="title is-1">개사랑</h1>
           <h2 class="subtitle">개사랑 사이트입니다.</h2>
         </div>
